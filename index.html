@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Cursos JP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#cursos-container">Cursos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <h1>Catálogo de Cursos JP</h1>
+    <p>Descubrí nuestros cursos de programación</p>
+  </header>
+
+  <main>
+    
+    <section id="recomendador">
+      <h2>¿No sabés por dónde empezar?</h2>
+      <p>Elegí una opción y te recomendamos un curso:</p>
+      <button data-tipo="frontend">Me interesa el Frontend</button>
+      <button data-tipo="backend">Me interesa el Backend</button>
+      <button data-tipo="datos">Me interesa Bases de Datos</button>
+      <p id="recomendacion"></p>
+    </section>
+
+    
+    <section id="cursos-container" class="grid-cursos"></section>
+
+  
+    <section id="carrito">
+      <h2>🛒 Carrito de compras</h2>
+      <ul id="carrito-lista"></ul>
+      <p>Total: $<span id="carrito-total">0</span></p>
+      <button id="comprar-btn">Comprar</button>
+    </section>
+
+  
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="formulario-contacto">
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Tu correo" required />
+        <textarea placeholder="Escribí tu mensaje..." required></textarea>
+        <button type="submit" id="btn-enviar">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 JP. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
